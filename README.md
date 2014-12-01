@@ -14,7 +14,7 @@ script. The PHP script writes a command out the RPI's serial USB port, which is 
 The Arduino "catches" the serial command coming in from the RPi, which is a simple string that indicates which prop to activate.
 The Arduino code, written in C, then activates the appropriate output port (which can be digital or analog), which then triggers
 the prop. In my haunt I use a set of relay controllers which take an output from the Arduino and use that to trigger a relay,
-which then sets off the prop. 
+which then sets off the prop. There is a video that I made last year which shows how the controllers are interconnected, the connection to a relay controller, and a prop being activated from a tablet: https://www.youtube.com/watch?v=c_m5nf3WKas
 
 The advantage of this architecture is that it's very easy to get a web server running on the RPi, and since the RPi supports
 a wide number of USB WiFi adapters, it's very simple to get it up on WiFi. Then any device, including PCs, tablets and 
